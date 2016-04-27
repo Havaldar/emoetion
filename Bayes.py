@@ -19,8 +19,8 @@ for x in class_freqs:
             for i in word_counts[word]:
                 den_num += i
             den_bot = articles_total
-            denom  = den_num/(float)den_bot
-            this_classifier = num/(float)denom
+            denom  = den_num/float(den_bot)
+            this_classifier = num/float(denom)
             current_total *= this_classifier
         except KeyError:
             print("Word doesn't exist in training corpus")
