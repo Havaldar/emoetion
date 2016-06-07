@@ -12,7 +12,7 @@ comments mentioning the specified show.
 
 ## STRATEGY FOR SOLVING THE PROBLEM
 
-1. ### Building the classifier
+1. **Building the classifier**
 We plan on making two classifiers to get a clear comparison of which works better with
 our answering scheme. The first will be a Boolean Naive Baye’s Classifier that uses Laplace
 Smoothing (Add­One Smoothing) to improve statistical analysis. Including Laplace Smoothing
@@ -24,13 +24,13 @@ The other classifier is a Maximum Entropy classifier that has no assumptions and
 for a uniform distribution despite that; it will handle the out­of­vocabulary supposedly better
 than the Boolean Naive Baye’s classifier. For both classifiers, we plan on using the
 Sentiment140 corpus of tweets as our training data set to establish our vocabulary..
-2. ### Scraping and Tokenizing Tweets
+2. **Scraping and Tokenizing Tweets**
 We will leveraging the Reddit API to gather posts. We will search query them by post
 and topic. We will query by discussion with topics of anime­related and consider each thread of
 the discuss as an opinion that we will analyze. Then we have to normalize them to accommodate
 emoticons, emojis, misspellings, abbreviations, usernames, colloquialism (“loooooool” is
 essentially “lol”) to name a few.
-3. ### Evaluation
+3. **Evaluation**
 We plan on using the rankings and ratings on imdb.com as a comparison to check our
 system. We will use Mean Average Precision that represents the average precision up to some
 cutoff (in terms of some ranking number, some recall number, etc). With each classifiers results,
